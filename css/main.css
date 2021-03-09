@@ -185,6 +185,7 @@ header {
 
 .hd-logo {
   font-size: 3.8rem;
+  letter-spacing: 3.8px;
 }
 
 .hd-navmenu {
@@ -199,9 +200,9 @@ header {
 
 .hd-navmenu ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   font-size: 1.8rem;
+  letter-spacing: 1.8px;
 }
 
 .hd-navmenu ul li {
