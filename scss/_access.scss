@@ -1,0 +1,67 @@
+.access {
+    width: 100%;
+    background-color: $lightcream;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        height: 400px;
+        width: 100%;
+        @include sp {
+            flex-direction: column-reverse;
+            height: 513px;
+        }
+    }
+    &-content {
+        width: 40%;
+        background-color:#D0C5BA;
+        position: relative;
+        @include sp {
+            width: 100%;
+            height: 282px;
+        }
+        &_desc {
+            position: absolute;
+            top: 26%;
+            left: 21%;
+            line-height: 1;
+            @include sp {
+                top: 11%;
+                left: 8.3%;
+                height: 192px;
+            }
+        }
+    }
+    &-map {
+        width: 60%;
+        @include sp {
+            width: 100%;
+            height: 231px;
+        }
+        map {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.shop {
+    color: #00000038;
+    font-size: 2.4rem;
+    margin-bottom: 30px;
+    font-weight: bold;
+    &-info {
+        color: #fff;
+        font-size: 1.6rem;
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        } 
+    }
+}
+
+.inner-width {
+    width: 100%;
+}
+
+.access-title {
+    margin-left: 8.3%;
+}

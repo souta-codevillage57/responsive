@@ -1,0 +1,55 @@
+.first-v {
+    &_wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 800px;
+        position: relative;
+        @include tab {
+            background-image: url(../img/bg1.png);
+            background-size: cover;
+            width: 100%;
+        }
+    }
+    &_left {
+        width: 46%;
+        @include tab {
+            width: 0;
+        }
+    }
+    &_right {
+        width: 54%;
+        @include tab {
+            width: 0;
+        }
+        img {
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.need {
+    font-size: 3.8rem;
+    font-family: Zapfino;
+}
+
+.first-v_catch {
+    position: absolute;
+    top: 50%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    height: 27%;
+    min-width: 350px;
+    @include tab {
+        color: #fff;
+        left: 50%;
+        flex-direction: column-reverse;
+        height: 20%;
+    }
+}
