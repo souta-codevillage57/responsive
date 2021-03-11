@@ -1,4 +1,5 @@
 .first-v {
+    overflow: hidden;
     &_wrap {
         display: flex;
         justify-content: space-between;
@@ -8,7 +9,10 @@
         @include tab {
             background-image: url(../img/bg1.png);
             background-size: cover;
-            width: 100%;
+            width: 100vw;
+            @include sp {
+                height: 570px;
+            }
         }
     }
     &_left {
@@ -33,6 +37,9 @@
 .need {
     font-size: 3.8rem;
     font-family: Zapfino;
+    @include sp {
+        font-size: 2.8rem;
+    }
 }
 
 .first-v_catch {
